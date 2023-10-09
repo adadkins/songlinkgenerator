@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./  # Path to the directory containing your Dockerfile and application code
+      dockerfile: Dockerfile  # Name of your Dockerfile (if not named Dockerfile)
+    container_name: my-app
+    ports:
+      - "5001:5000"
+    environment:
+      - SPOTIPY_CLIENT_ID=10b91af54fbd480a814673587a528998
+      - SPOTIPY_CLIENT_SECRET=3d1fc19679ac4cfc8e32b54df95dc7ff
