@@ -26,7 +26,6 @@ def spotify_to_ytm():
     # Split the URL using '/' as a delimiter and get the last part
     spotify_id = spotify_link.split('/')[-1]
 
-    print(spotify_id)
     # Implement the conversion logic here (e.g., using regex or APIs)
     ytm_link = convert_spotify_to_ytm(spotify_id)
 
