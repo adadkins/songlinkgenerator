@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/songlinkgenerator/static/css/main.073c9b0a.css",
-    "main.js": "/songlinkgenerator/static/js/main.b469e83c.js",
+    "main.css": "/songlinkgenerator/static/css/main.e6c13ad2.css",
+    "main.js": "/songlinkgenerator/static/js/main.3c303769.js",
     "static/js/787.6a1fee4f.chunk.js": "/songlinkgenerator/static/js/787.6a1fee4f.chunk.js",
-    "static/media/logo.svg": "/songlinkgenerator/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/songlinkgenerator/index.html",
-    "main.073c9b0a.css.map": "/songlinkgenerator/static/css/main.073c9b0a.css.map",
-    "main.b469e83c.js.map": "/songlinkgenerator/static/js/main.b469e83c.js.map",
+    "main.e6c13ad2.css.map": "/songlinkgenerator/static/css/main.e6c13ad2.css.map",
+    "main.3c303769.js.map": "/songlinkgenerator/static/js/main.3c303769.js.map",
     "787.6a1fee4f.chunk.js.map": "/songlinkgenerator/static/js/787.6a1fee4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b469e83c.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3c303769.js"
   ]
 }
