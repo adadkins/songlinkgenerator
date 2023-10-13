@@ -1,7 +1,7 @@
 version: '3'
 services:
   traefik:
-    image: "traefik:v2.8"
+    image: "traefik:latest"
     container_name: "traefik"
     command:
       - "--log.level=DEBUG"
@@ -9,10 +9,9 @@ services:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
-      - "--entrypoints.web.address=:443"
     ports:
-      - "80:5000"
-      - "443:5000"
+      - "80:80"
+      - "8080:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
   web:
@@ -25,9 +24,10 @@ services:
     environment:
       - SPOTIPY_CLIENT_ID=10b91af54fbd480a814673587a528998
       - SPOTIPY_CLIENT_SECRET=3d1fc19679ac4cfc8e32b54df95dc7ff
-    depends_on:
-      - traefik
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.reddit_comment_api.rule=Host(`songlinkgenerator.adadkins.com`)"
-      - "traefik.http.routers.reddit_comment_api.entrypoints=web"
+      - "traefik.http.routers.songlinkgenerator.rule=Host(`songlinkgenerator.adadkins.com`)"
+      - "traefik.http.routers.songlinkgenerator.entrypoints=web"
+    depends_on:
+      - traefik
+
