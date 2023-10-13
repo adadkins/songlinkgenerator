@@ -14,7 +14,7 @@ services:
       - "8080:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
-  web:
+  songlinkgenerator:
     build:
       context: ./  # Path to the directory containing your Dockerfile and application code
       dockerfile: Dockerfile  # Name of your Dockerfile (if not named Dockerfile)
