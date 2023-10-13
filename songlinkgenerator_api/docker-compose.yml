@@ -28,6 +28,9 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.songlinkgenerator.rule=Host(`songlinkgenerator.adadkins.com`)"
       - "traefik.http.routers.songlinkgenerator.entrypoints=web"
+      - "traefik.http.routers.my-app.service=my-app"
+      - "traefik.http.services.my-app.loadbalancer.server.port=5000"  # Route to port 5000
+
     depends_on:
       - traefik
 
